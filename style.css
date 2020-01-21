@@ -69,3 +69,26 @@ ul li a:hover {
   .social i:hover {
       color: #000;
   }
+  .center {
+      position: absolute;
+      top: 34%;
+      left: 30%;
+  }
+  .center h1 {
+      font-size: 100px;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+  }
+  .plus {
+      position: absolute;
+      bottom: 5%;
+      right: 5%;
+  }
+  .plus i {
+      font-size: 3.5rem;
+      transition: 0.3s;
+      cursor: pointer;
+  }
+  .plus i:hover {
+      transform: scale(1.2);
+  }
