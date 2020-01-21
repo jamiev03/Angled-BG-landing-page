@@ -36,7 +36,7 @@ ul li a {
     padding-bottom: .25em;
     text-decoration: none;
 }
-  a:hover {
+ul li a:hover {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
     background-position: bottom;
     background-repeat: repeat-x;
@@ -47,16 +47,25 @@ ul li a {
   }
   .verticalLine {
     position: relative;
-    border-left: thick solid #000000;
-    height: 30%;
-    margin-left: 65px;
+    border-left: 2px solid #000000;
+    height: 32%;
+    margin-left: 45px;
+    opacity: 0.4;
   }
   .social {
       display: flex;
       flex-direction: column;
-      margin-left: 65px;
+      margin-left: 19px;
+      width: 3rem;
+      margin-top: 15px;
+      margin-bottom: 15px;;
   }
   .social i {
-      font-size: 2rem;
+      font-size: 2.2rem;
+      padding: 10px;
       color: white;
+      transition: 0.2s;
+  }
+  .social i:hover {
+      color: #000;
   }
