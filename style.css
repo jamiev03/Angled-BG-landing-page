@@ -92,3 +92,53 @@ ul li a:hover {
   .plus i:hover {
       transform: scale(1.2);
   }
+
+
+
+  /* MEDIA QUERIES */
+@media screen and (max-width: 500px) {
+    .logo {
+        margin: 0 auto;
+    } 
+    .center {
+        top: 34%;
+        left: 25%;
+    }
+    .center h1 {
+        font-size: 58px;
+    }
+    .verticalLine {
+        height: 27%;
+        margin-left: 35px;
+    }
+    .social {
+        margin-left: 8px;
+    }
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;  
+    }
+    .links {
+        margin: 0 auto;
+    }
+    nav ul li {
+        margin-right: 0;
+    }
+}
+@media screen and (min-width: 501px and max-width: 768px) {
+    .logo {
+        margin-left: 75px;
+    } 
+    .center {
+        top: 34%;
+        left: 30%;
+    }
+    .center h1 {
+        font-size: 85px;
+    }
+    .verticalLine {
+        height: 29%;
+    }
+}
