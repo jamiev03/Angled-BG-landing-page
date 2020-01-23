@@ -31,8 +31,8 @@ ul {
 ul li a {
     text-decoration: none;
     margin-right: 35px;
-    border-bottom: 1px solid #000000;
-    color: #000000;
+    border-bottom: 1px solid #1c1c1c;
+    color: #1c1c1c;
     padding-bottom: .25em;
     text-decoration: none;
 }
@@ -47,7 +47,7 @@ ul li a:hover {
   }
   .verticalLine {
     position: relative;
-    border-left: 2px solid #000000;
+    border-left: 2px solid #1c1c1c;
     height: 32%;
     margin-left: 45px;
     opacity: 0.4;
@@ -79,6 +79,32 @@ ul li a:hover {
       margin-bottom: 1rem;
       margin-top: 1rem;
   }
+  .circle {
+      position: absolute;
+      border-radius: 50%;
+	  width: 300px;
+      height: 300px;
+      top: 50%;
+      left: 75%;
+      background-image: -moz-radial-gradient(45px 45px 45deg, circle cover, yellow 0%, orange 100%, red 95%);
+	  background-image: -webkit-radial-gradient(45px 45px, circle cover, yellow, orange);
+      background-image: radial-gradient(45px 45px 45deg, circle cover, yellow 0%, orange 100%, red 95%);
+      z-index: -1;
+  }
+  .circle2 {
+      top: 80%;
+      left: 30%;
+      position: absolute;
+      border-radius: 50%;
+	  width: 200px;
+      height: 200px;
+      top: 50%;
+      left: 75%;
+      background-image: -moz-radial-gradient(45px 45px 45deg, circle cover, yellow 0%, orange 100%, red 95%);
+	  background-image: -webkit-radial-gradient(45px 45px, circle cover, yellow, orange);
+      background-image: radial-gradient(45px 45px 45deg, circle cover, yellow 0%, orange 100%, red 95%);
+      z-index: -1;
+  }
   .plus {
       position: absolute;
       bottom: 5%;
@@ -92,6 +118,7 @@ ul li a:hover {
   .plus i:hover {
       transform: scale(1.2);
   }
+  
 
 
 
@@ -127,7 +154,7 @@ ul li a:hover {
         margin-right: 0;
     }
 }
-@media screen and (min-width: 501px and max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width: 501px) {
     .logo {
         margin-left: 75px;
     } 
