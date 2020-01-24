@@ -120,15 +120,32 @@ ul li a:hover {
       position: absolute;
       bottom: 5%;
       right: 5%;
+      
   }
   .plus i {
       font-size: 3.5rem;
-      transition: 0.3s;
+      animation: pulse 2s infinite;
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	  transform: scale(1);
       cursor: pointer;
+      border-radius: 50%;
   }
-  .plus i:hover {
-      transform: scale(1.2);
-  }
+  @keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1.2);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
   
 
 
