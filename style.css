@@ -12,6 +12,7 @@ body {
     background-repeat: no-repeat;
     background-size: 100vw;
     height: 100vh;
+    box-sizing: border-box;
   }
   
 nav {
@@ -83,6 +84,11 @@ ul li a:hover {
       width: 55%;
       height: auto;
       padding-left: 15rem;
+  }
+  .projects {
+      height: 90vh;
+      width: 100vw;
+      background-color: #1c1c1c;
   }
   .circle {
       position: absolute;
