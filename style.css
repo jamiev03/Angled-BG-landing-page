@@ -111,8 +111,8 @@ ul li a:hover {
   }
   .projects .card .face {
       width: 450px;
-      height: 200px;
-      transition: 0.5s;
+      height: 250px;
+      transition: 0.4s;
   }
   .projects .card .face.face1 {
       position: relative;
@@ -121,6 +121,28 @@ ul li a:hover {
       justify-content: center;
       align-items: center;
       z-index: 1;
+      transform: translateY(130px);
+  }
+  .projects .card:hover .face.face1 {
+      transform: translateY(0);
+      background-color: #ff6464;
+  }
+  .projects .card .face.face1 .content {
+      opacity: 0.3;
+      transition: 0.4s;
+  }
+  .projects .card:hover .face.face1 .content {
+      opacity: 1;
+  }
+  .projects .card .face.face1 .content img {
+      max-width: 150px;
+  }
+  .projects .card .face.face1 .content h3 {
+      margin: 10px 0 0;
+      padding: 0;
+      color: #fff;
+      text-align: center;
+      font-size: 1.5rem;
   }
   .projects .card .face.face2 {
       position: relative;
@@ -137,7 +159,7 @@ ul li a:hover {
       padding: 0;
   }
   .projects .card .face.face2 .content a {
-      margin: 15px 0 15px 0;
+      margin: 35px 0 15px 0;
       display: inline-block;
       text-decoration: none;
       font-weight: 700;
