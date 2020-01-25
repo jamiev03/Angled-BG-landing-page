@@ -64,7 +64,7 @@ ul li a:hover {
       font-size: 2.2rem;
       padding: 10px;
       color: white;
-      transition: 0.2s;
+      transition: 0.3s;
   }
   .social i:hover {
       color: #000;
@@ -78,6 +78,11 @@ ul li a:hover {
       font-size: 100px;
       margin-bottom: 1rem;
       margin-top: 1rem;
+  }
+  .about-me {
+      width: 55%;
+      height: auto;
+      padding-left: 15rem;
   }
   .circle {
       position: absolute;
@@ -130,6 +135,9 @@ ul li a:hover {
       cursor: pointer;
       border-radius: 50%;
   }
+  .plus i:hover {
+      animation: none;
+  }
   @keyframes pulse {
 	0% {
 		transform: scale(0.95);
@@ -138,7 +146,7 @@ ul li a:hover {
 
 	70% {
 		transform: scale(1.2);
-		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+		box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
 	}
 
 	100% {
@@ -181,6 +189,10 @@ ul li a:hover {
     nav ul li {
         margin-right: 0;
     }
+    .circle {
+        height: 140px;
+        width: 140px;
+    }
 }
 @media screen and (max-width: 768px) and (min-width: 501px) {
     .logo {
@@ -188,12 +200,16 @@ ul li a:hover {
     } 
     .center {
         top: 34%;
-        left: 30%;
+        left: 25%;
     }
     .center h1 {
         font-size: 85px;
     }
     .verticalLine {
         height: 29%;
+    }
+    .circle {
+        height: 170px;
+        width: 170px;
     }
 }
