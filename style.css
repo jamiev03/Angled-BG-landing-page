@@ -202,6 +202,7 @@ ul li a:hover {
       color: #1c1c1c;
       padding: 5px;
       border: 1px solid #1c1c1c;
+      transition: 0.3s;
 }
   .projects .card .face.face2 .content a:hover {
       background-color: #1c1c1c;
@@ -226,6 +227,10 @@ ul li a:hover {
       align-items: center;
       color: #fff;
       width: 90%;
+      margin: 0 auto;
+  }
+  .footer .skills h3 {
+      margin: 2rem 0;
   }
   .circle {
       position: absolute;
