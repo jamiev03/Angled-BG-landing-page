@@ -108,9 +108,8 @@ ul li a:hover {
       z-index: 2;
   }
   .projects-main {
-    
     background-color: #1c1c1c;
-    height: 100vh;
+    height: auto;
     width: 100%;
     background-size: cover;
     scroll-snap-align: start;
@@ -126,12 +125,23 @@ ul li a:hover {
       justify-content: space-around;
       align-items: center;
       flex-wrap: wrap;
+      padding: 5% 0;
   }
   .projects .card {
       position: relative;
   }
+  .projects .card .face.face1.active1  {
+    transform: translateY(0);
+    background-color: #ff6464;
+  }
+  .projects .card .face.face2.active2  {
+    transform: translateY(0);
+}
+  .projects .card .face.face1.active1 .content {
+      opacity: 1;
+  }
   .projects .card .face {
-      width: 450px;
+      width: 420px;
       height: 250px;
       transition: 0.4s;
   }
@@ -203,7 +213,12 @@ ul li a:hover {
       width: 100%;
       background-size: cover;
       scroll-snap-align: start;
-
+  }
+  .footer h2 {
+    font-size: 3.5rem;
+    text-decoration: underline;
+    color: #fff;
+    padding: 1rem 0 2rem 2.5rem;
   }
   .circle {
       position: absolute;
