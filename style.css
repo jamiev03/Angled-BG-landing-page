@@ -38,7 +38,7 @@ nav {
     font-size: 1.2rem;
     color: #1c1c1c;
 }
-ul {
+nav .links ul {
     display: flex;
     list-style: none;
     margin-right: 30px;
@@ -219,6 +219,13 @@ ul li a:hover {
     text-decoration: underline;
     color: #fff;
     padding: 1rem 0 2rem 2.5rem;
+  }
+  .footer .skills {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      color: #fff;
+      width: 90%;
   }
   .circle {
       position: absolute;
