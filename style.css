@@ -132,7 +132,10 @@ ul li a:hover {
   }
   .projects .card .face.face1.active1  {
     transform: translateY(0);
-    background-color: #ff6464;
+    background-image: url(img/amazon-box-looking-at-black-dell-laptop-2363482.jpg);
+    background-position: center;
+    background-size: cover;
+
   }
   .projects .card .face.face2.active2  {
     transform: translateY(0);
@@ -154,10 +157,25 @@ ul li a:hover {
       z-index: 1;
       transform: translateY(130px);
   }
-  .projects .card:hover .face.face1 {
+  .projects .card:hover .face.face1.img-2 {
       transform: translateY(0);
-      background-color: #ff6464;
+      background-image: url(img/business-code-coding-computer-270632.jpg);
+      background-position: center;
+      background-size: cover;
   }
+  .projects .card:hover .face.face1.img-3 {
+    transform: translateY(0);
+    background-image: url(img/iphone-notebook-pen-working-34580.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.projects .card:hover .face.face1.img-4 {
+    transform: translateY(0);
+    background-color: #ff6464;
+    background-image: url(img/person-looking-at-phone-and-at-macbook-pro-1181244.jpg);
+    background-position: center;
+    background-size: cover;
+}
   .projects .card .face.face1 .content {
       opacity: 0.3;
       transition: 0.4s;
@@ -170,8 +188,10 @@ ul li a:hover {
   }
   .projects .card .face.face1 .content h3 {
       margin: 10px 0 0;
-      padding: 0;
+      padding: 10px;
       color: #fff;
+      background-color: #1c1c1c;
+      border-radius: 3px;
       text-align: center;
       font-size: 1.5rem;
   }
