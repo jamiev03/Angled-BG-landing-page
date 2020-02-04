@@ -94,6 +94,54 @@ ul li a:hover {
       font-size: 100px;
       margin-bottom: 1rem;
       margin-top: 1rem;
+
+      animation-name: rightFadeInOut;
+      animation-delay: .5s;
+      animation-duration: 3s;
+  }
+
+  .center h3 {
+    animation-name: leftFadeInOut;
+    animation-delay: .5s;
+    animation-duration: 3s;
+  }
+
+  @keyframes rightFadeInOut {
+    0% {
+      position: absolute;
+      left: 3rem;
+      opacity: 0;
+    }
+  
+    75% {
+      position: absolute;
+      left: 10rem;
+      opacity: .8;
+    }
+  
+    100% {
+      opacity: 1;
+      left: 10rem;
+    }
+  }
+
+  @keyframes leftFadeInOut {
+    0% {
+      position: absolute;
+      left: 3rem;
+      opacity: 0;
+    }
+  
+    75% {
+      position: absolute;
+      left: 10rem;
+      opacity: .8;
+    }
+  
+    100% {
+      opacity: 1;
+      left: 10rem;
+    }
   }
   .about-me {
       position: absolute;
