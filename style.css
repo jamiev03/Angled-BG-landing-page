@@ -89,21 +89,15 @@ ul li a:hover {
       top: 34%;
       left: 30%;
       color: #1c1c1c;
+      
+      animation-name: rightFadeInOut;
+      animation-delay: .5s;
+      animation-duration: 1.5s;
   }
   .center h1 {
       font-size: 100px;
       margin-bottom: 1rem;
       margin-top: 1rem;
-
-      animation-name: rightFadeInOut;
-      animation-delay: .5s;
-      animation-duration: 3s;
-  }
-
-  .center h3 {
-    animation-name: leftFadeInOut;
-    animation-delay: .5s;
-    animation-duration: 3s;
   }
 
   @keyframes rightFadeInOut {
@@ -115,34 +109,20 @@ ul li a:hover {
   
     75% {
       position: absolute;
-      left: 10rem;
+      left: 30%;
       opacity: .8;
+    }
+
+    65% {
+        left: 30.5%;
     }
   
     100% {
       opacity: 1;
-      left: 10rem;
+      left: 30%;
     }
   }
 
-  @keyframes leftFadeInOut {
-    0% {
-      position: absolute;
-      left: 3rem;
-      opacity: 0;
-    }
-  
-    75% {
-      position: absolute;
-      left: 10rem;
-      opacity: .8;
-    }
-  
-    100% {
-      opacity: 1;
-      left: 10rem;
-    }
-  }
   .about-me {
       position: absolute;
       top: 62%;
@@ -151,6 +131,32 @@ ul li a:hover {
       height: auto;
       z-index: 2;
       color: #1c1c1c;
+      animation-name: leftFadeInOut;
+      animation-delay: .5s;
+      animation-duration: 1.5s;
+  }
+
+  @keyframes leftFadeInOut {
+    0% {
+      position: absolute;
+      left: 60%;
+      opacity: 0;
+    }
+
+    65% {
+        left: 45%;
+    }
+  
+    75% {
+      position: absolute;
+      left: 44.5%;
+      opacity: .8;
+    }
+
+    100% {
+      opacity: 1;
+      left: 45%;
+    }
   }
   .center, .about-me {
       z-index: 2;
