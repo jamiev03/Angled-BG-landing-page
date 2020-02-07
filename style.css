@@ -293,12 +293,18 @@ ul li a:hover {
     font-size: 3.5rem;
     text-decoration: underline;
     color: #fff;
-    padding: 1rem 0 2rem 2.5rem;
+    padding: 2rem 0 2rem 2.5rem;
+  }
+  .skillset p {
+      color: white;
+      max-width: 50rem;
+      padding-left: 2.5rem;
   }
   .skillset .skills {
       display: flex;
       justify-content: space-around;
       align-items: flex-start;
+      flex-wrap: wrap;
       color: #fff;
       width: 90%;
       margin: 1rem auto;
